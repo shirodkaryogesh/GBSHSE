@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: block;
+    /* Remove flex centering */
+    padding: 20px;
+    /* Add some padding for spacing from top */
+    height: 100vh;
+    overflow-y: auto;
+    /* Enable scroll if content exceeds screen */
+}
+
+.file-container {
+    display: block;
+    /* Ensure container stacks children vertically */
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+}
+
+.file-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    width: 50vw;
+    margin-bottom: 20px;
+    /* Add margin to separate the file-boxes */
+    position: relative;
+    /* Removes the absolute positioning */
+}
+
+.file-header {
+    font-size: 18px;
+    margin: 5px 0px 10px 0px;
+    font-weight: bold;
+    /* padding: 3px 0px 3px 0px; */
+}
+
+.sent-value {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.sub-heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sub-value {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.file-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0px 12px 0px;
+}
+
+.file-name {
+    font-weight: bold;
+}
+
+.eye-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.assign-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.assign-button:hover {
+    background-color: #0056b3;
+}

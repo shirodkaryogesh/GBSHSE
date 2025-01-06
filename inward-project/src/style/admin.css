@@ -1,0 +1,205 @@
+/* Styling the admin component */
+.admin-container {
+    display: block;
+    padding: 20px;
+}
+
+.subject-heading {
+    margin-bottom: 2px;
+}
+
+.subject-input {
+    width: 100%;
+    padding: 10px 0px 10px 6px;
+    margin: 11px 0px 11px 0px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.subject-input:focus {
+    border-color: #007bff;
+    /* Change to a blue border when focused */
+    outline: none;
+}
+
+.subject-input::placeholder {
+    color: #888;
+}
+
+/* Increase width of both sections */
+.admin-upload-section,
+.admin-list-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* Separate sections */
+    width: 50vw;
+    /* Increase the width */
+    margin-left: auto;
+    /* Center the sections */
+    margin-right: auto;
+    /* Center the sections */
+}
+
+/* Styling the heading */
+.upload-heading {
+    margin: 6px 0px 2px 0px;
+}
+
+/* Styling the input field */
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px 0px 10px 6px;
+    margin: 11px 0px 11px 0px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    /* border: 2px solid #ced4da; */
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+/* Change border color on focus */
+input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 10px 0px 10px 6px;
+    margin: 18px 0px 0px 0px;
+    font-size: 16px;
+}
+
+.preview-button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.preview-button:hover {
+    color: #007bff;
+}
+
+/* Styling for employee list */
+
+.admin-list-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.search-and-buttons {
+    margin-bottom: 20px;
+    width: 100;
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* To space it from the employee list */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-icon {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.reselect-button,
+.submit-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.reselect-button {
+    background-color: #9fb7d1;
+    color: rgb(41, 37, 37);
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.reselect-button:hover,
+.submit-button:hover {
+    opacity: 0.8;
+    /* Slightly dim on hover */
+}
+
+/* Employee item styles */
+.employee-item {
+    list-style: none;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.employee-item:hover {
+    background-color: #ced4da;
+}
+
+.selected {
+    background-color: #3b70a8;
+    /* Change color for selected item */
+    color: white;
+    /* Change text color for selected item */
+}
